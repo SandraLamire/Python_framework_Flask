@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Résultat du formulaire</h1>
+    <p>E-mail : {{ mail }}</p>
+    {% if password %}
+    <p>Mot de passe : {{ password }}</p>
+    {% else %}
+    <p>Alerte : votre mot de passe est vide !</p>
+    {% endif %}
+<!--    <h1>Résultat du formulaire</h1>-->
+<!--    <p>Votre E-mail : {{ mail}}</p>-->
+<!--    {% if len(password) < 9 %}-->
+<!--    <p>Le mot de passe est trop court !</p>-->
+<!--    {% else %}-->
+<!--    <p>Votre mot de passe : {{ password }}</p>-->
+<!--    {% endif %}-->
+</body>
+</html>
